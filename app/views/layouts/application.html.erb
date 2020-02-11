@@ -4,15 +4,18 @@
     <title>PwaTest</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="canonical" href="https://ib-pwa-test.herokuapp.com/"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#924">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Ian's first attempt at a simple PWA">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'serviceworker-rails/icon_512.png', rel: 'apple-touch-icon', type:'image/png' %>
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="canonical" href="https://ib-pwa-test.herokuapp.com/"/>
+    <link rel="apple-touch-icon" href="/example.png">
   </head>
 
   <body>
